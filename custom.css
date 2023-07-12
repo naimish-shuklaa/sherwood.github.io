@@ -68,6 +68,20 @@
   height: 10rem;
   display: inline-block;
   position: relative;
-  top: 10%;
-  left: 10%;
+  top: 12%;
+  left: 25%;
 }
+
+.enroll{
+  color: aliceblue;
+  display: inline-block;
+  position: relative;
+  top: 37%;
+  left: -17%;
+}
+
+.enbtn{
+  color: aliceblue;
+  position: relative;
+  top: 45%;
+  left: -34%;}

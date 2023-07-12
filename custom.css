@@ -100,3 +100,8 @@
     top: 106%;
     left: 20%;
  }
+
+ .sndbtn{
+  margin-top: 25px;
+  /* position: absolute; */
+ }

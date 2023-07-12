@@ -88,3 +88,14 @@
  .xhi{
   background-image: url(heroimg.png);
  }
+
+.sec2{
+  background-color: #b0b6e7;
+ }
+
+ .frm{
+  display: inline-block;
+    position: absolute;
+    top: 106%;
+    left: 20%;
+ }

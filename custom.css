@@ -48,3 +48,26 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: rgb(30 58 138);}
+
+.hero{
+    background-color: rgb(62, 94, 185);
+    background-image: url(heroimg.png);
+    background-blend-mode: lighten;
+    /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.grplogo{
+  width: 40rem;
+  height: 10rem;
+  display: inline-block;
+  position: relative;
+  top: 10%;
+  left: 10%;
+}

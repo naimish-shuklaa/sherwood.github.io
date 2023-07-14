@@ -131,3 +131,17 @@ transition: 0.4s ease-in-out;
 transform: scale(1.3);
 z-index: 2;
  }
+
+
+ .lightbtn{
+  background-color: #055a9b;
+ }
+
+ .darkbtn{
+  background-color: #0a1e50;
+ }
+
+ .btnw{
+  width: 100%;
+  height: 100%;
+ }

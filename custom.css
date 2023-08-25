@@ -95,10 +95,8 @@
  }
  
  .frm{
-   display: inline-block;
    position: absolute;
    top: 106%;
-    left: 14%;
  }
  
  .sndbtn{

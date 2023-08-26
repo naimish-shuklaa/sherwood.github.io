@@ -1,5 +1,7 @@
-.body{
+body{
     font-family: 'Roboto', sans-serif;}
+
+
 
 .navclr{
     background-color: #0a1e50;
@@ -99,6 +101,8 @@
    top: 106%;
  }
  
+
+
  .sndbtn{
   margin-top: 25px;
   /* position: absolute; */

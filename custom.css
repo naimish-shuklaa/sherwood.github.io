@@ -157,6 +157,13 @@ z-index: 2;
   border: 4px solid white;
  }
  
+
+
+ .bottom-84 {
+  bottom: 21rem/* 320px */;
+}
+
+
  .hm{
 
     height: 6.7rem;

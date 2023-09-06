@@ -80,16 +80,12 @@
 				</svg>
 			</li>
 
-			<li>
-				<!-- <a class="text-base font-normal text-white hover:text-gray-500" href="#">ABOUTUS </a> -->
-
-
-
-
+			<li class="z-10">
+			
 
 				<div class="  dropdown">
-					<button class="dropbtn  bg-blue-900 ">About&nbspUs</button>
-					<div class="  dropdown-content">
+					<button class="dropbtn   bg-blue-900 ">ABOUT&nbspUS</button>
+					<div class=" z-10 dropdown-content">
 						<a class="z-10" href="vision.html">Vision & Mission </a>
 						<a class="z-10" href="infras.html">Infrastructure </a>
 						<a class="z-10" href="#">Chairman’s Desk </a>
@@ -258,8 +254,8 @@
 
 
 	<!-- hero -->
-	<section>
-		<div class="relative xhi  z-[-1] overflow-hidden bg-no-repeat bg-cover" style="
+	<section class="flex flex-col">
+		<div class="relative   xhi -z-10 overflow-hidden bg-no-repeat bg-cover" style="
 background-position: 50%;
 
 background-image: url(heroimg.png);
@@ -274,28 +270,95 @@ height: 685px;
 							34 Years of Legacy in Education your Door to Future... <br />
 						</h1>
 
-						<button type="button"
-							class="inline-block px-7 py-3 text-white font-medium text-sm leading-snug uppercase  bg-red-500 rounded-3xl hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
-							data-mdb-ripple="true" data-mdb-ripple-color="light">
-							<a class="z-10" href=""><span class="bg-red-500"> Enroll Now</span></a>
-						</button>
+					
 					</div>
 				</div>
 			</div>
+
+			
+		
+		
+		
+		
 		</div>
+		 <button type="button"   onclick="openForm" id="frmbtn"
+		class="inline-block absolute self-center bottom-16  px-7 py-3 text-white font-medium text-sm leading-snug uppercase  bg-red-500 rounded-3xl hover:bg-blue-900 hover:bg-opacity-9 focus:outline-none focus:ring-0 transition duration-100 ease-in-out"
+		data-mdb-ripple="true" data-mdb-ripple-color="light" >
+	<span  id="Close">
+		Enroll Now</span>	
+	<span style="display: none;" id="open">
+		Close</span>	
+	</button>
 	</section>
 
 
+<script>
 
 
+
+	
+const btn = document.getElementById('frmbtn');
+
+btn.addEventListener('click', () => {
+  const form = document.getElementById('myForm');
+  const c = document.getElementById('Close');
+  const o = document.getElementById('open');
+//   const c = document.getElementById('courses');
+
+
+  if (form.style.display === 'none') {
+    // 👇️ this SHOWS the form
+    form.style.display = 'flex';
+    o.style.display = 'block';
+    c.style.display = 'none';
+    
+
+  } else {
+    // 👇️ this HIDES the form
+    o.style.display = 'none';
+    form.style.display = 'none';
+    c.style.display = 'block';
+
+  }
+
+
+
+
+
+});
+
+
+
+
+	
+
+	
+
+
+</script>
+
+
+
+<!-- 
+ <script>
+	var element = document.getElementById("theMessage");
+
+function showMsg(){
+    element.style.display = "flex";
+}
+
+function hideMsg() {
+      element.style.display = "hidden";
+}
+ </script> -->
 
 
 	<section class=" sec3" style="background-color: rgba(62, 94, 185,0.50)">
 
 
+		<div id="myForm" style="display: none;" class="frm z-50 md:left-52 top-48 py-10 bg-white rounded-md  flex-col  space-y-5 ">
 
-		<div class="frm invisible md:visible md:left-52  py-10 bg-white rounded-md flex flex-col  space-y-5 ">
-
+			
 
 			<div class="1  mx-2 my-12 space-x-11 flex">
 				<div class="w-full">
@@ -381,7 +444,7 @@ height: 685px;
 
 				<div class="w-full">
 
-					<button
+					<button id="x"
 					class=" sndbtn middle none center w-72 h-10 rounded-lg bg-black py-3  px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
 					data-ripple-light="true">
 
@@ -389,6 +452,56 @@ height: 685px;
 				</button>
 				
 				</div>
+
+
+<!-- 
+				<script>
+
+
+
+	
+					const x = document.getElementById('x');
+					
+		
+					
+					x.addEventListener('click', () => {
+					  const form = document.getElementById('myForm');
+					//   const c = document.getElementById('courses');
+					
+					
+					  if (form.style.display === 'none') {
+						// 👇️ this SHOWS the form
+						form.style.display = 'block';
+						
+					
+					  } else {
+						// 👇️ this HIDES the form
+						form.style.display = 'none';
+					
+					  }
+					
+					
+					
+					
+					
+					});
+					
+						
+					
+						
+					
+					
+					</script>
+					
+					 -->
+
+
+
+
+
+
+
+
 
 			</div>
 
@@ -402,9 +515,8 @@ height: 685px;
 
 
 
-		<section class="relative top-72">
-			<BR></BR><BR></BR>
-			<p class="text-center text-3xl font-bold ">ACADEMIC COURSES</p>
+		<section id="" class="relative top-">
+			<p class="text-center text-6xl py-5 font-bold " id="acourse" >ACADEMIC COURSES</p>
 			<br>
 			<br>
 
@@ -429,7 +541,7 @@ dpmt">
 		<br>
 		<br>
 
-		<div class="space-y-4 relative top-64">
+		<div class="space-y-12 relative top-5">
 
 
 			<div class="flex flex-wrap justify-center gap-4">
@@ -997,8 +1109,8 @@ height: 491px;
 					<a class=" text-white font-semibold " href="#">
 						<li class="list-disc">Grievance Redressal</li>
 					</a>
-					<a class=" text-white font-semibold " href="#">
-						<li class="list-disc">Event</li>
+					<a class=" text-white font-semibold " href="fees.html">
+						<li class="list-disc">Fees Structure</li>
 					</a>
 				</ul>
 			</div>
@@ -1049,36 +1161,6 @@ height: 491px;
 	</footer>
 
 
-
-	<script>
-		var count = document.getElementsByClassName("count");
-		var inc = [];
-		function intervalFunc() {
-			for (let i = 0; i < count.length; i++) {
-				inc.push(1);
-				if (inc[i] != count[i].getAttribute("max-data")) {
-					inc[i]++;
-				}
-				count[i].innerHTML = inc[i] + "+";
-			}
-		}
-
-
-
-		var main = document.getElementById("main");
-		window.onscroll = function () {
-			var timer = setInterval(() => {
-				var topElm = main.offsetTop;
-				var btmElm = main.offsetTop + main.clientHeight;
-				var top_screen = window.pageYOffset;
-				var bottom_screen = window.pageYOffset + window.innerHeight;
-				if ((bottom_screen > topElm) && (top_screen < btmElm)) {
-					intervalFunc();
-				} else {
-					clearInterval(timer);
-				}
-			}, 10)
-		};</script>
 
 
 </body>
@@ -1141,5 +1223,8 @@ height: 491px;
 
 <!-- from cdn -->
 <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script>
+
+
+<!-- form script -->
 
 </html>
